@@ -1,6 +1,4 @@
 import * as React from "react";
-import { Buffer } from 'buffer';
-window.Buffer = Buffer;
 import algosdk from 'algosdk';
 import { animated } from "react-spring";
 import { useWiggle } from "../hooks/wiggle";
