@@ -2,6 +2,7 @@ dependencies:
   algosdk: 1.12.0
   browserify-zlib: 0.2.0
   buffer: 6.0.3
+  path-browserify: 1.0.1
   process: 0.11.10
   react: 17.0.2
   react-dom: 17.0.2
@@ -999,6 +1000,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
+  /path-browserify/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==
   /path-parse/1.0.7:
     dev: true
     resolution:
@@ -1363,6 +1368,7 @@ specifiers:
   algosdk: ^1.12.0
   browserify-zlib: ^0.2.0
   buffer: ^6.0.3
+  path-browserify: ^1.0.1
   process: ^0.11.10
   react: ^17.0.2
   react-dom: ^17.0.2
