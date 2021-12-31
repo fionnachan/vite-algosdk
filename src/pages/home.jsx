@@ -1,6 +1,4 @@
 import * as React from "react";
-import { Buffer } from "buffer";
-console.log("buffer here?", Buffer)
 import algosdk from 'algosdk';
 import { animated } from "react-spring";
 import { useWiggle } from "../hooks/wiggle";
@@ -38,7 +36,7 @@ export default function Home() {
   */
   const [style, trigger] = useWiggle({ x: 5, y: 5, scale: 1 });
   const indexer = new algosdk.Indexer("","https://algoindexer.algoexplorerapi.io/v2", "");
-  indexer.lookupAssetById(384303832).do()
+  indexer.lookupAssetByID(384303832).do()
     .then(response => {
 
       console.log("response", response)
