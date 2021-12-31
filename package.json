@@ -15,7 +15,6 @@
     "wouter": "^2.7.4",
     "react-helmet-async": "^1.2.2",
     "buffer": "^6.0.3",
-    "path-browserify": "^1.0.1",
     "rollup-plugin-node-polyfills": "^0.2.1"
   },
   "devDependencies": {
