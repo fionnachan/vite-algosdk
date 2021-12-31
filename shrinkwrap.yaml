@@ -7,7 +7,6 @@ dependencies:
   react: 17.0.2
   react-dom: 17.0.2
   react-helmet-async: 1.2.2
-  react-spring: 9.3.2
   rollup-plugin-node-polyfills: 0.2.1
   stream-browserify: 3.0.0
   util: 0.12.4
@@ -282,106 +281,6 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-OBvfqnllOIdX4ojTHpwZbpvz4j3EWyjkZEdmjH0/cgsd6QOdSgU8rLSk6ard/pcW7rlmjdVSX/AWOaORR1uNOQ==
-  /@react-spring/animated/9.3.1:
-    dependencies:
-      '@react-spring/shared': 9.3.1
-      '@react-spring/types': 9.3.1
-    dev: false
-    peerDependencies:
-      react: ^16.8.0  || ^17.0.0
-    resolution:
-      integrity: sha512-23YaERZ++BwZ8F8PxPFqrpOwp/JZun1Pj6aHZtPAU42j5LycBRasT9XMw7Eyr7zNFhT+rl3R3wFfd4WX6Ax+UA==
-  /@react-spring/core/9.3.1:
-    dependencies:
-      '@react-spring/animated': 9.3.1
-      '@react-spring/shared': 9.3.1
-      '@react-spring/types': 9.3.1
-    dev: false
-    peerDependencies:
-      react: ^16.8.0  || ^17.0.0
-    resolution:
-      integrity: sha512-8rmfmEHLHGtF1CUiXRn64YJqsXNxv2cGX8oNnBnsuoE33c48Zc34t2VIMB4R9q5zwIUCvDBGfiEenA8ZAPxqOQ==
-  /@react-spring/konva/9.3.1:
-    dependencies:
-      '@react-spring/animated': 9.3.1
-      '@react-spring/core': 9.3.1
-      '@react-spring/shared': 9.3.1
-      '@react-spring/types': 9.3.1
-    dev: false
-    peerDependencies:
-      konva: '>=2.6'
-      react: ^16.8.0  || ^17.0.0
-      react-konva: ^16.8.0  || ^17.0.0
-    resolution:
-      integrity: sha512-woG2DeDcUlz5hB8g9pA/tyUWU6dMrAzyUsNiBWVCyI9UqKA7CUKjz+ODOUi+hS++3Kz7kZSr3u0zzHHfxvoTPQ==
-  /@react-spring/native/9.3.1:
-    dependencies:
-      '@react-spring/animated': 9.3.1
-      '@react-spring/core': 9.3.1
-      '@react-spring/shared': 9.3.1
-      '@react-spring/types': 9.3.1
-    dev: false
-    peerDependencies:
-      react: ^16.8.0  || ^17.0.0
-      react-native: '>=0.58'
-    resolution:
-      integrity: sha512-NAC1wHIUvy1umCVQRxcS+31Dmr9NszBY06sHy3jR8/HVuKNtaDUARVF3AYL/HfbIy4m6yR3tcIkM2NQ0SO+rZA==
-  /@react-spring/rafz/9.3.1:
-    dev: false
-    resolution:
-      integrity: sha512-fEBMCarGVl+/2kdO+g6Zig4F+3ymwmcGN8S71gb1c7Cbbxb87kviPz8EhshfIHoiLeJPGlqwcuGbxNmZbBamvA==
-  /@react-spring/shared/9.3.1:
-    dependencies:
-      '@react-spring/rafz': 9.3.1
-      '@react-spring/types': 9.3.1
-    dev: false
-    peerDependencies:
-      react: ^16.8.0  || ^17.0.0
-    resolution:
-      integrity: sha512-jhPpxzURGo6Nty90ex1lkxmZae7w/VAbnGmb/nXcYoZwSoNR+W2aAd00iXsh2ZGz6MgoJOsc495JeG3uC7Am8A==
-  /@react-spring/three/9.3.1:
-    dependencies:
-      '@react-spring/animated': 9.3.1
-      '@react-spring/core': 9.3.1
-      '@react-spring/shared': 9.3.1
-      '@react-spring/types': 9.3.1
-    dev: false
-    peerDependencies:
-      '@react-three/fiber': '>=6.0'
-      react: '>=16.11'
-      three: '>=0.126'
-    resolution:
-      integrity: sha512-40iRIX2DrY+a81hIliOog6TMg/ZAtHGeZr95r0vKAsl+iX1g9Hs8XCS4wTeQIUgydZpbpShk/JL6mkcstEfBdw==
-  /@react-spring/types/9.3.1:
-    dev: false
-    resolution:
-      integrity: sha512-W/YMJMX35XgGGzX0gKORBTwnvQ+1loDOFN3XlZkW5fgpEY+7VkRUpPyqPWXQr3n6lHrsLmHIGdpznqZi54ACTQ==
-  /@react-spring/web/9.3.1:
-    dependencies:
-      '@react-spring/animated': 9.3.1
-      '@react-spring/core': 9.3.1
-      '@react-spring/shared': 9.3.1
-      '@react-spring/types': 9.3.1
-    dev: false
-    peerDependencies:
-      react: ^16.8.0  || ^17.0.0
-      react-dom: ^16.8.0  || ^17.0.0
-    resolution:
-      integrity: sha512-sisZIgFGva/Z+xKWPSfXpukF0AP3kR9ALTxlHL87fVotMUCJX5vtH/YlVcywToEFwTHKt3MpI5Wy2M+vgVEeaw==
-  /@react-spring/zdog/9.3.1:
-    dependencies:
-      '@react-spring/animated': 9.3.1
-      '@react-spring/core': 9.3.1
-      '@react-spring/shared': 9.3.1
-      '@react-spring/types': 9.3.1
-    dev: false
-    peerDependencies:
-      react: ^16.8.0  || ^17.0.0
-      react-dom: ^16.8.0  || ^17.0.0
-      react-zdog: '>=1.0'
-      zdog: '>=1.0'
-    resolution:
-      integrity: sha512-QflA/fII9zWe9CSOA8QGSLMjUwyrtD1TX6YVzUSn/nlr2f7PlZPijdpdu9Cvdirgss472cUS7cRIUfll0TepqA==
   /@rollup/pluginutils/4.1.1:
     dependencies:
       estree-walker: 2.0.2
@@ -1087,17 +986,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-PgidR3wST3dDYKr6b4pJoqQFpPGNKDSCDx4cZoshjXipw3LzO7mG1My2pwEzz2JVkF+inx3xRpDeQLFQGH/hsQ==
-  /react-spring/9.3.2:
-    dependencies:
-      '@react-spring/core': 9.3.1
-      '@react-spring/konva': 9.3.1
-      '@react-spring/native': 9.3.1
-      '@react-spring/three': 9.3.1
-      '@react-spring/web': 9.3.1
-      '@react-spring/zdog': 9.3.1
-    dev: false
-    resolution:
-      integrity: sha512-LMFgjvTJVg2ltthzgJcZ7siOdRig7L8wJZIHrc7p6ss4AaJ446xHzm9L2ZQha1ZC9QVY8/e6XfLhMTFAG6dtjw==
   /react/17.0.2:
     dependencies:
       loose-envify: 1.4.0
@@ -1373,7 +1261,6 @@ specifiers:
   react: ^17.0.2
   react-dom: ^17.0.2
   react-helmet-async: ^1.2.2
-  react-spring: ^9.3.2
   rollup-plugin-node-polyfills: ^0.2.1
   stream-browserify: ^3.0.0
   util: ^0.12.4

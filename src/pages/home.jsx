@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import * as React from "react";
 import algosdk from 'algosdk';
 
 /**
@@ -22,7 +22,7 @@ export default function Home() {
     const assetInfo = await indexer.lookupAssetByID(assetId).do();
     console.log("lookupAssetByID response:", assetInfo);
   }
-  useEffect(() => {
+  React.useEffect(() => {
     runIndexerMethods();
   }, [runIndexerMethods]);
   return (
