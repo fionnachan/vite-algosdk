@@ -3,12 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./app.jsx";
 import { HelmetProvider } from 'react-helmet-async';
-import { Buffer } from 'buffer';
-window.global = window;
-global.Buffer = global.Buffer || Buffer;
-window.process = {
-  version: '',
-};
+import process from "process";
 /**
 * Root of react site 
 *

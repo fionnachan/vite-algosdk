@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>window.global = window;</script>
+    <script type="module">
+        import process from "process";
+        import { Buffer } from "buffer";
+        import EventEmitter from "events";
+
+        window.Buffer = Buffer;
+        window.process = process;
+        window.EventEmitter = EventEmitter;
+    </script>
     
     <!-- This is the main template for the site, with index.jsx building the content and behavior -->
     

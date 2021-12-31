@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Buffer} from "buffer";
+import { Buffer } from "buffer";
 console.log("buffer here?", Buffer)
 import algosdk from 'algosdk';
 import { animated } from "react-spring";
@@ -37,12 +37,12 @@ export default function Home() {
      - We can attach this to events on elements in the page and apply the resulting style
   */
   const [style, trigger] = useWiggle({ x: 5, y: 5, scale: 1 });
-//   const indexer = new algosdk.Indexer("","https://algoindexer.algoexplorerapi.io/v2", "");
-//   indexer.lookupAssetById(384303832).do()
-//     .then(response => {
+  const indexer = new algosdk.Indexer("","https://algoindexer.algoexplorerapi.io/v2", "");
+  indexer.lookupAssetById(384303832).do()
+    .then(response => {
 
-//       console.log("response", response)
-//     });
+      console.log("response", response)
+    });
 
   // When the user clicks we change the header language
   const handleChangeHello = () => {
