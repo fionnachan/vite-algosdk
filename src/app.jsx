@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Router, Link } from "wouter";
+import { Buffer } from 'buffer';
+window.global = window;
+global.Buffer = global.Buffer || Buffer;
+window.process = {
+  version: '',
+};
 
 /**
 * This code defines the react app

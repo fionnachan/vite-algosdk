@@ -1,12 +1,6 @@
 import { defineConfig } from "vite";
 import reactRefresh from "@vitejs/plugin-react-refresh";
 import nodePolyfills from 'rollup-plugin-node-polyfills';
-import { Buffer } from 'buffer';
-window.global = window;
-global.Buffer = global.Buffer || Buffer;
-window.process = {
-  version: '',
-};
 
 // https://vitejs.dev/config/
 export default defineConfig({
