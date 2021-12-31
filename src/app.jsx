@@ -39,7 +39,7 @@ export default function Home() {
           <span className="divider">|</span>
           <Link href="/about">About</Link>
           <span className="divider">|</span>
-          <Link href="/export">Export</Link>
+          <Link href="/export">Export to GitHub</Link>
         </div>
         <a
           className="btn--remix"

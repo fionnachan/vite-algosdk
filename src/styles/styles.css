@@ -25,6 +25,14 @@ to this section's matching END comment to see page-specific styles.
   display: none !important;
 }
 
+code {
+  font-size: 12px;
+  font-family: monospace;
+  padding: 2px 4px;
+  background-color: #cdcdcd;
+  border-radius: 6px;
+}
+
 /* Import fonts */
 @font-face {
   font-family: HK Grotesk;
