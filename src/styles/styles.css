@@ -145,24 +145,6 @@ h1 {
   text-decoration: none;
 }
 
-/* The React image and "click me" text */
-.btn--click-me {
-  user-select: none;
-  cursor: pointer;
-  white-space: nowrap;
-}
-.btn--click-me:hover {
-  text-decoration: underline;
-}
-
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  cursor: pointer;
-  padding-left: 3.5rem;
-}
-
 /* Instructions */
 .instructions {
   margin: 1rem auto 0;

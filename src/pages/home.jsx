@@ -13,11 +13,14 @@ export default function Home() {
     const server = "https://algoindexer.algoexplorerapi.io/";
     const port   = "";
     const indexer = new algosdk.Indexer(token, server, port);
+    
     const assetId = 384303832;
     const address = "XBYLS2E6YI6XXL5BWCAMOA4GTWHXWENZMX5UHXMRNWWUQ7BXCY5WC5TEPA";
+    
     const accountInfo = await indexer.lookupAccountByID(address).do();
+    console.log("lookupAccountByID response:", accountInfo);
     const assetInfo = await indexer.lookupAssetByID(assetId).do();
-    console.log("lookupAssetByID response:", response)
+    console.log("lookupAssetByID response:", assetInfo);
   }
   useEffect(() => {
     runIndexerMethods();
@@ -25,14 +28,14 @@ export default function Home() {
   return (
     <>
       <h1 className="title">Hello!</h1>
-      <div className="navigation">
-        Open your console to see the results!
-      </div>
       <div className="instructions">
         <h2>Using this project</h2>
         <p>
           This is a <strong>Vite + Algorand JS SDK</strong> project. It comes with the polyfill for Buffer to allow Algorand JS SDK to work. You can use
-          it to build your own app.
+          it to build your own app. On this page, the indexer methods are called and the responses are logged.
+        </p>
+        <p>
+          Open your console to see the results!
         </p>
       </div>
     </>
