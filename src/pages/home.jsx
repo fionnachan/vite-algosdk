@@ -9,14 +9,17 @@ import algosdk from 'algosdk';
 */
 export default function Home() {
   const runIndexerMethods = async () => {
-    const token  = "";
-    const server = "https://algoindexer.algoexplorerapi.io/";
+    const token  = "OLmhUbIAOV3BabEtnEq8lav2r48cHY9A9fCMG1Xv";
+    const server = "https://testnet-algorand.api.purestake.io/idx2";
     const port   = "";
-    const indexer = new algosdk.Indexer(token, server, port);
+    const indexer = new algosdk.Indexer({
+      "x-api-key": token
+    }, server, port);
     
-    const assetId = 384303832;
+    const assetId = 408947;
     const address = "XBYLS2E6YI6XXL5BWCAMOA4GTWHXWENZMX5UHXMRNWWUQ7BXCY5WC5TEPA";
     
+    const assetTransactions 
     const accountInfo = await indexer.lookupAccountByID(address).do();
     console.log("lookupAccountByID response:", accountInfo);
     const assetInfo = await indexer.lookupAssetByID(assetId).do();
