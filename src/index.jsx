@@ -1,9 +1,7 @@
-import path from 'path';
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./app.jsx";
 import { HelmetProvider } from 'react-helmet-async';
-import process from "process";
 /**
 * Root of react site 
 *
@@ -20,9 +18,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-
-// Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
-// Learn more: https://vitejs.dev/guide/api-hmr.html
-if (import.meta.hot) {
-  import.meta.hot.accept();
-}
