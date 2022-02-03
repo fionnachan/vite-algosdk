@@ -31,9 +31,8 @@ export default function Home() {
       <div className="instructions">
         <h2>Using this project</h2>
         <p>
-          This is a <strong>Vite + Algorand JS SDK</strong> project. It comes with the polyfills for <code>Buffer</code>,{" "} 
-          <code>process</code>, <code>stream-browserify</code>,{" "} 
-          <code>browserify-zlib</code>, <code>util</code>, and <code>path-browserify</code> to allow Algorand JS SDK to work. You can use
+          This is a <strong>Vite + Algorand JS SDK</strong> project. It comes with the polyfills for <code>Buffer</code>{" "} 
+          and <code>path-browserify</code> to allow Algorand JS SDK to work. You can use
           it to build your own app. On this page, the indexer methods are called and the responses are logged.
         </p>
         <p>

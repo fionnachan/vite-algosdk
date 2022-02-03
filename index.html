@@ -10,13 +10,8 @@
     <link rel="icon" href="https://glitch.com/favicon.ico" />
     <script>window.global = window;</script>
     <script type="module">
-        import process from "process";
-        import { Buffer } from "buffer";
-        import EventEmitter from "events";
-
-        window.Buffer = Buffer;
-        window.process = process;
-        window.EventEmitter = EventEmitter;
+      import { Buffer } from "buffer";
+      window.Buffer = Buffer;
     </script>
   </head>
   <body>
